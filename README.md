@@ -8,7 +8,7 @@ How to run:
 
 
 
-To make our weather application work, we need OpenWeatherMap, a third-party API that'll let us fetch the weather data.
+To make this little weather application work, you need OpenWeatherMap, a third-party API that'll let us fetch the weather data.
 
 Go to https://home.openweathermap.org/users/sign_up and create your own account.
 
@@ -18,6 +18,4 @@ You also need an API key to call these APIs. To get your API key, click on your 
 
 Create an API key if it doesn't already exist.
 
-In your main app folder, create a file called .env.
-
-This is an environment variable file that will contain all your API endpoints and keys.
+In your main app folder, create a file called ".env". This is an environment variable file that will contain all your API endpoints and keys.
