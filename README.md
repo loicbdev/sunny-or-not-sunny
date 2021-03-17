@@ -21,6 +21,3 @@ Create an API key if it doesn't already exist.
 In your main app folder, create a file called .env.
 
 This is an environment variable file that will contain all your API endpoints and keys.
-
-
-Tutorial source : <https://www.freecodecamp.org/news/learn-react-by-building-a-weather-app/>
