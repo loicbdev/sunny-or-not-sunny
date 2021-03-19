@@ -31,7 +31,10 @@ const WeatherCard = ({weatherData}) => (
       <div className="flex">
         <p className="temp">Pressure: {weatherData.main.pressure} hPa</p>
         <p className="temp">Humidity: {weatherData.main.humidity} %</p>
-        <p className="temp">Wind: {(weatherData.wind.speed * 1.852).toFixed(1)} km/h</p>
+      </div>
+
+      <div className="flex">
+        <p className="temp">Wind speed: {(weatherData.wind.speed * 3.6).toFixed(1)} km/h</p>
       </div>
 
       <div className="flex">
