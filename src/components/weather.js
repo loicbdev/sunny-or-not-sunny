@@ -23,7 +23,7 @@ const WeatherCard = ({weatherData}) => (
       </div>
 
       <div className="flex">
-        <p className="temp">T&deg;C: {weatherData.main.temp}</p>
+        <p className="temp">T&deg;C: {(weatherData.main.temp).toFixed(1)}</p>
         <p className="temp">Wind: {(weatherData.wind.speed * 3.6).toFixed(1)} km/h</p>
       </div>
 
