@@ -34,6 +34,9 @@ const WeatherCard = ({weatherData}) => (
 
       <div className="flex">
         <p className="sunrise-sunset">Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
+      </div>
+
+      <div className="flex">
         <p className="sunrise-sunset">Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
       </div>
     
