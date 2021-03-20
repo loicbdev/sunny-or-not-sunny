@@ -24,8 +24,7 @@ const WeatherCard = ({weatherData}) => (
 
       <div className="flex">
         <p className="temp">T&deg;C: {weatherData.main.temp}</p>
-        <p className="temp">T&deg;C Max: {weatherData.main.temp_max}</p>
-        <p className="temp">T&deg;C Min: {weatherData.main.temp_min}</p>
+        <p className="temp">Wind: {(weatherData.wind.speed * 3.6).toFixed(1)} km/h</p>
       </div>
 
       <div className="flex">
@@ -34,14 +33,7 @@ const WeatherCard = ({weatherData}) => (
       </div>
 
       <div className="flex">
-        <p className="temp">Wind speed: {(weatherData.wind.speed * 3.6).toFixed(1)} km/h</p>
-      </div>
-
-      <div className="flex">
         <p className="sunrise-sunset">Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
-      </div>
-
-      <div className="flex">
         <p className="sunrise-sunset">Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
       </div>
     
